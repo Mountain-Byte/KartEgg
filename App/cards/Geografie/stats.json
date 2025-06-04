@@ -1,0 +1,75 @@
+[
+  {
+    "timestamp": "2025-05-29T00:54:05.893927",
+    "richtig": 1,
+    "falsch": 1,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-05-29T11:26:50.257733",
+    "richtig": 2,
+    "falsch": 1,
+    "unsicher": 0
+  },
+  {
+    "timestamp": "2025-05-29T11:27:08.678218",
+    "richtig": 3,
+    "falsch": 0,
+    "unsicher": 0
+  },
+  {
+    "timestamp": "2025-05-29T11:27:24.886587",
+    "richtig": 1,
+    "falsch": 1,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-06-03T22:22:04.380467",
+    "richtig": 2,
+    "falsch": 1,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-06-03T22:43:20.877958",
+    "richtig": 2,
+    "falsch": 1,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-06-04T10:34:49.013101",
+    "richtig": 1,
+    "falsch": 2,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-06-04T10:42:50.161152",
+    "richtig": 1,
+    "falsch": 1,
+    "unsicher": 2
+  },
+  {
+    "timestamp": "2025-06-04T17:01:46.970901",
+    "richtig": 2,
+    "falsch": 1,
+    "unsicher": 1,
+    "unbekannt": 0,
+    "details": [
+      {
+        "question": "Hauptstadt: Deutschland",
+        "result": "richtig"
+      },
+      {
+        "question": "Hauptstadt: Frankreich",
+        "result": "unsicher"
+      },
+      {
+        "question": "Hauptstadt: Japan",
+        "result": "falsch"
+      },
+      {
+        "question": "Hauptstadt: Österreich",
+        "result": "richtig"
+      }
+    ]
+  }
+]

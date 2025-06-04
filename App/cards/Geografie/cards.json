@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Hauptstadt: Deutschland",
+    "answer": "Berlin",
+    "group": "Geografie"
+  },
+  {
+    "question": "Hauptstadt: Frankreich",
+    "answer": "Paris",
+    "group": "Geografie"
+  },
+  {
+    "question": "Hauptstadt: Japan",
+    "answer": "Tokio",
+    "group": "Geografie"
+  },
+  {
+    "question": "Hauptstadt: Österreich",
+    "answer": "Wien",
+    "group": "Geografie"
+  }
+]
