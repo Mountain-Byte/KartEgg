@@ -1,0 +1,248 @@
+[
+  {
+    "timestamp": "2025-05-29T00:31:58.287609",
+    "richtig": 5,
+    "falsch": 2,
+    "unsicher": 2
+  },
+  {
+    "timestamp": "2025-05-29T00:33:41.576152",
+    "richtig": 5,
+    "falsch": 2,
+    "unsicher": 2
+  },
+  {
+    "timestamp": "2025-05-29T00:40:26.855262",
+    "richtig": 8,
+    "falsch": 1,
+    "unsicher": 0
+  },
+  {
+    "timestamp": "2025-05-29T00:40:39.899248",
+    "richtig": 7,
+    "falsch": 1,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-05-29T11:33:52.561454",
+    "richtig": 8,
+    "falsch": 1,
+    "unsicher": 0
+  },
+  {
+    "timestamp": "2025-05-29T11:39:19.076530",
+    "richtig": 6,
+    "falsch": 1,
+    "unsicher": 2
+  },
+  {
+    "timestamp": "2025-05-29T11:49:08.611862",
+    "richtig": 6,
+    "falsch": 2,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-06-03T22:02:33.733924",
+    "richtig": 4,
+    "falsch": 3,
+    "unsicher": 2
+  },
+  {
+    "timestamp": "2025-06-03T22:09:21.158924",
+    "richtig": 7,
+    "falsch": 1,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-06-03T22:27:49.412569",
+    "richtig": 5,
+    "falsch": 2,
+    "unsicher": 2
+  },
+  {
+    "timestamp": "2025-06-04T10:40:04.911168",
+    "richtig": 2,
+    "falsch": 6,
+    "unsicher": 1
+  },
+  {
+    "timestamp": "2025-06-04T17:01:59.013634",
+    "richtig": 4,
+    "falsch": 2,
+    "unsicher": 1,
+    "unbekannt": 2,
+    "details": [
+      {
+        "question": "Haus",
+        "result": "richtig"
+      },
+      {
+        "question": "Tisch",
+        "result": "falsch"
+      },
+      {
+        "question": "Stuhl",
+        "result": "falsch"
+      },
+      {
+        "question": "Stift",
+        "result": "unsicher"
+      },
+      {
+        "question": "Flaschen",
+        "result": "richtig"
+      },
+      {
+        "question": "Bleistift",
+        "result": "richtig"
+      },
+      {
+        "question": "Huhn",
+        "result": "richtig"
+      },
+      {
+        "question": "Kuh",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Hallo",
+        "result": "unbekannt"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-04T20:08:38.941103",
+    "richtig": 5,
+    "falsch": 2,
+    "unsicher": 2,
+    "unbekannt": 0,
+    "details": [
+      {
+        "question": "Haus",
+        "result": "richtig"
+      },
+      {
+        "question": "Tisch",
+        "result": "richtig"
+      },
+      {
+        "question": "Stuhl",
+        "result": "falsch"
+      },
+      {
+        "question": "Stift",
+        "result": "richtig"
+      },
+      {
+        "question": "Flaschen",
+        "result": "unsicher"
+      },
+      {
+        "question": "Bleistift",
+        "result": "unsicher"
+      },
+      {
+        "question": "Huhn",
+        "result": "falsch"
+      },
+      {
+        "question": "Kuh",
+        "result": "richtig"
+      },
+      {
+        "question": "Hallo",
+        "result": "richtig"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-04T20:44:50.046024",
+    "richtig": 3,
+    "falsch": 2,
+    "unsicher": 1,
+    "unbekannt": 3,
+    "details": [
+      {
+        "question": "Haus",
+        "result": "richtig"
+      },
+      {
+        "question": "Tisch",
+        "result": "richtig"
+      },
+      {
+        "question": "Stuhl",
+        "result": "falsch"
+      },
+      {
+        "question": "Stift",
+        "result": "falsch"
+      },
+      {
+        "question": "Flasche",
+        "result": "unsicher"
+      },
+      {
+        "question": "Bleistift",
+        "result": "richtig"
+      },
+      {
+        "question": "Huhn",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Kuh",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Hallo",
+        "result": "unbekannt"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-04T21:25:41.655812",
+    "richtig": 0,
+    "falsch": 0,
+    "unsicher": 0,
+    "unbekannt": 9,
+    "details": [
+      {
+        "question": "Haus",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Tisch",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Stuhl",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Stift",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Flasche",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Bleistift",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Huhn",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Kuh",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Hallo",
+        "result": "unbekannt"
+      }
+    ]
+  }
+]
