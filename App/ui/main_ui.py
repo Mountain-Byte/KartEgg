@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import tkinter as tk
 from tkinter import messagebox
@@ -6,23 +7,25 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from models import Flashcard
 from data_manager import load_data, save_data, load_statistics
 from ui.pie_chart import draw_pie_chart
-import learning_mode
-from ui.group_selection import get_all_groups
+
+# Optional: Import für Lernmodus, falls vorhanden
+try:
+    import learning_mode
+except ImportError:
+    learning_mode = None
 
 class FlashcardApp(tk.Frame):
     def __init__(self, master, group):
         super().__init__(master)
         self.master = master
-        self.group = group
+        self.group = group  # relativer Pfad!
         self.pack(fill="both", expand=True)
         self.cards = []
         self.selected_index = None
         self.edit_mode = False
         self.file_path = os.path.join("cards", self.group, "cards.json")
-        
+
         self.create_widgets()
-        
-        # Diagramm-Frame vorbereiten (muss vor draw_pie existieren!)
         self.diagram_frame = tk.Frame(self.chart_frame)
         self.diagram_frame.grid(row=0, column=0, sticky="nsew")
 
@@ -46,11 +49,16 @@ class FlashcardApp(tk.Frame):
             self.left_frame.rowconfigure(i, weight=0)
         self.left_frame.rowconfigure(4, weight=1)
 
-        # Gruppen-Label + Dropdown
+        # Gruppen-Label + Button (öffnet Explorer)
         tk.Label(self.left_frame, text="Gruppe:").grid(row=0, column=0, sticky="w")
-        self.group_var = tk.StringVar(value=self.group)
-        self.group_dropdown = tk.OptionMenu(self.left_frame, self.group_var, *get_all_groups(), command=self.change_group)
-        self.group_dropdown.grid(row=0, column=1, sticky="ew", pady=2)
+        self.group_btn = tk.Button(
+            self.left_frame,
+            text=os.path.basename(self.group),
+            relief="raised",
+            command=self.select_new_group,
+            width=20
+        )
+        self.group_btn.grid(row=0, column=1, sticky="ew", pady=2)
 
         # Frage-Eingabe
         tk.Label(self.left_frame, text="Frage:").grid(row=1, column=0, sticky="w")
@@ -141,14 +149,14 @@ class FlashcardApp(tk.Frame):
             self.btn_create.config(state="normal" if q and a else "disabled")
 
     def load_latest_stats(self, base_folder="cards"):
-        filepath = os.path.join(base_folder, self.group, "stats.json")
+        filepath = os.path.join(base_folder, self.group, "stats.json")  # <-- angepasst
         if not os.path.exists(filepath):
-            return {"details": []}
+            return {}
         with open(filepath, "r", encoding="utf-8") as f:
+            import json
             data = json.load(f)
         latest = data[-1] if isinstance(data, list) else data
         return latest
-
 
     def load_cards(self):
         self.cards = load_data(self.file_path)
@@ -224,7 +232,7 @@ class FlashcardApp(tk.Frame):
         total = len(self.cards)
         learned = 0
 
-        stats_path = os.path.join("cards", self.group, "stats.json")
+        stats_path = os.path.join("cards", self.group, "stats.json")  # <-- angepasst
 
         if os.path.exists(stats_path):
             try:
@@ -298,19 +306,34 @@ class FlashcardApp(tk.Frame):
         self.question_var.set("")
         self.answer_var.set("")
 
-    def change_group(self, new_group):
+    def select_new_group(self):
+        """Beendet die App und startet sie neu, damit der Explorer erscheint."""
+        restart_app()
+
+    def change_group(self, new_group_name):
+        # OptionMenu aktualisieren
+        menu = self.group_dropdown["menu"]
+        menu.delete(0, "end")
+        for name in self.group_names:
+            menu.add_command(label=name, command=lambda value=name: self.group_var.set(value))
         self.master.destroy()
         from ui.main_ui import start_main_app
-        start_main_app(new_group)
+        start_main_app(self.group_map[new_group_name])
 
     def start_learning_mode(self):
-        learning_mode.start_learning(
-            self.group,
-            self.cards,
-            parent_window=self.master,
-        )
+        if learning_mode is not None:
+            learning_mode.start_learning(
+                self.group,
+                self.cards,
+                parent_window=self.master,
+            )
+        else:
+            messagebox.showinfo("Nicht verfügbar", "Lernmodus ist nicht verfügbar.")
 
     def draw_pie(self):
+        stats = load_statistics(self.group)  # group ist jetzt ein Pfad
+        fig = draw_pie_chart(stats)
+
         # Nur obersten Bereich (Diagramm) löschen – nicht den ganzen chart_frame
         for widget in self.chart_frame.grid_slaves(row=0, column=0):
             widget.destroy()
@@ -320,9 +343,6 @@ class FlashcardApp(tk.Frame):
         diagram_frame.grid(row=0, column=0, sticky="nsew")
         diagram_frame.columnconfigure(0, weight=1)
         diagram_frame.rowconfigure(0, weight=1)
-
-        stats = load_statistics(self.group)
-        fig = draw_pie_chart(stats)
 
         canvas = FigureCanvasTkAgg(fig, master=diagram_frame)
         canvas.draw()
@@ -355,10 +375,22 @@ class FlashcardApp(tk.Frame):
         self.master.minsize(width, height)
         self.master.geometry(f"{width}x{height}")
 
-def start_main_app(group):
-    root = tk.Tk()
-    root.title(f"Karteikarten - Gruppe: {group}")
-    root.state('zoomed') 
+def start_main_app(group, root=None):
+    """Startet das Hauptfenster für die angegebene Gruppe."""
+    if root is None:
+        root = tk.Tk()
+        root.title(f"Karteikarten - Gruppe: {group}")
+        root.state('zoomed')
+        app = FlashcardApp(root, group)
+        root.mainloop()
+    else:
+        # Entferne alle alten Frames
+        for widget in root.winfo_children():
+            widget.destroy()
+        root.title(f"Karteikarten - Gruppe: {group}")
+        app = FlashcardApp(root, group)
 
-    app = FlashcardApp(root, group) 
-    root.mainloop()
+def restart_app():
+    """Beendet das aktuelle Programm und startet es neu."""
+    python = sys.executable
+    os.execl(python, python, *sys.argv)
