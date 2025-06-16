@@ -1,0 +1,91 @@
+[
+  {
+    "timestamp": "2025-06-16T10:53:57.012628",
+    "richtig": 1,
+    "falsch": 3,
+    "unsicher": 0,
+    "unbekannt": 16,
+    "details": [
+      {
+        "question": "Delicious",
+        "result": "richtig"
+      },
+      {
+        "question": "Expensive",
+        "result": "falsch"
+      },
+      {
+        "question": "Cheap / Reasonable",
+        "result": "falsch"
+      },
+      {
+        "question": "Good",
+        "result": "falsch"
+      },
+      {
+        "question": "New",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Old",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Big",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Small",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Interesting",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Boring",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Beautiful",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Famous",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Uncrowded/ Peaceful",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Crowded",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Convenient",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Unconvenient",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Hot",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Cold",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Warm",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Chilly/ Cool",
+        "result": "unbekannt"
+      }
+    ]
+  }
+]

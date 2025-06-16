@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Guten Tag",
+    "answer": "Bonjour",
+    "group": "Französisch"
+  },
+  {
+    "question": "Zwei",
+    "answer": "Deux",
+    "group": "Französisch"
+  },
+  {
+    "question": "Zehn",
+    "answer": "Dix",
+    "group": "Französisch"
+  },
+  {
+    "question": "Vier",
+    "answer": "Quatre",
+    "group": "Französisch"
+  },
+  {
+    "question": "Baum",
+    "answer": "Arbre",
+    "group": "Französisch"
+  },
+  {
+    "question": "Apfel",
+    "answer": "Pomme",
+    "group": "Französisch"
+  }
+]

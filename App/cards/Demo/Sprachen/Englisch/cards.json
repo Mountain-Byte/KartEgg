@@ -1,0 +1,47 @@
+[
+  {
+    "question": "Haus",
+    "answer": "House",
+    "group": "Englisch"
+  },
+  {
+    "question": "Tisch",
+    "answer": "Table",
+    "group": "Englisch"
+  },
+  {
+    "question": "Stuhl",
+    "answer": "Chair",
+    "group": "Englisch"
+  },
+  {
+    "question": "Stift",
+    "answer": "Pen",
+    "group": "Englisch"
+  },
+  {
+    "question": "Flasche",
+    "answer": "Bottle",
+    "group": "Englisch"
+  },
+  {
+    "question": "Bleistift",
+    "answer": "Pencil",
+    "group": "Englisch"
+  },
+  {
+    "question": "Huhn",
+    "answer": "Chicken",
+    "group": "Englisch"
+  },
+  {
+    "question": "Kuh",
+    "answer": "Cow",
+    "group": "Englisch"
+  },
+  {
+    "question": "Hallo",
+    "answer": "Hello",
+    "group": "Englisch"
+  }
+]

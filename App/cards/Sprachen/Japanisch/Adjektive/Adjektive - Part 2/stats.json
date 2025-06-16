@@ -1,0 +1,513 @@
+[
+  {
+    "timestamp": "2025-06-15T16:02:51.842920",
+    "richtig": 2,
+    "falsch": 6,
+    "unsicher": 2,
+    "unbekannt": 6,
+    "details": [
+      {
+        "question": "Difficult",
+        "result": "falsch"
+      },
+      {
+        "question": "Easy",
+        "result": "falsch"
+      },
+      {
+        "question": "Cute",
+        "result": "richtig"
+      },
+      {
+        "question": "Fun",
+        "result": "richtig"
+      },
+      {
+        "question": "Busy",
+        "result": "falsch"
+      },
+      {
+        "question": "Free/ Unoccupied",
+        "result": "unsicher"
+      },
+      {
+        "question": "Wide",
+        "result": "unsicher"
+      },
+      {
+        "question": "Narrow",
+        "result": "falsch"
+      },
+      {
+        "question": "Far",
+        "result": "falsch"
+      },
+      {
+        "question": "Nearby",
+        "result": "falsch"
+      },
+      {
+        "question": "A lot",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Few",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Long",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Short",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Stressful",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Sleepy/ Boring",
+        "result": "unbekannt"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-15T16:16:44.366512",
+    "richtig": 4,
+    "falsch": 5,
+    "unsicher": 1,
+    "unbekannt": 6,
+    "details": [
+      {
+        "question": "Difficult",
+        "result": "richtig"
+      },
+      {
+        "question": "Easy",
+        "result": "unsicher"
+      },
+      {
+        "question": "Cute",
+        "result": "richtig"
+      },
+      {
+        "question": "Fun",
+        "result": "falsch"
+      },
+      {
+        "question": "Busy",
+        "result": "falsch"
+      },
+      {
+        "question": "Free/ Unoccupied",
+        "result": "richtig"
+      },
+      {
+        "question": "Wide",
+        "result": "richtig"
+      },
+      {
+        "question": "Narrow",
+        "result": "falsch"
+      },
+      {
+        "question": "Far",
+        "result": "falsch"
+      },
+      {
+        "question": "Nearby",
+        "result": "falsch"
+      },
+      {
+        "question": "A lot",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Few",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Long",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Short",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Stressful",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Sleepy/ Boring",
+        "result": "unbekannt"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-15T16:23:45.750299",
+    "richtig": 7,
+    "falsch": 2,
+    "unsicher": 1,
+    "unbekannt": 6,
+    "details": [
+      {
+        "question": "Difficult",
+        "result": "richtig"
+      },
+      {
+        "question": "Easy",
+        "result": "richtig"
+      },
+      {
+        "question": "Cute",
+        "result": "richtig"
+      },
+      {
+        "question": "Fun",
+        "result": "unsicher"
+      },
+      {
+        "question": "Busy",
+        "result": "falsch"
+      },
+      {
+        "question": "Free/ Unoccupied",
+        "result": "richtig"
+      },
+      {
+        "question": "Wide",
+        "result": "richtig"
+      },
+      {
+        "question": "Narrow",
+        "result": "falsch"
+      },
+      {
+        "question": "Far",
+        "result": "richtig"
+      },
+      {
+        "question": "Nearby",
+        "result": "richtig"
+      },
+      {
+        "question": "A lot",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Few",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Long",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Short",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Stressful",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Sleepy/ Boring",
+        "result": "unbekannt"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-15T16:26:29.006121",
+    "richtig": 10,
+    "falsch": 3,
+    "unsicher": 3,
+    "unbekannt": 0,
+    "details": [
+      {
+        "question": "Difficult",
+        "result": "unsicher"
+      },
+      {
+        "question": "Easy",
+        "result": "richtig"
+      },
+      {
+        "question": "Cute",
+        "result": "richtig"
+      },
+      {
+        "question": "Fun",
+        "result": "richtig"
+      },
+      {
+        "question": "Busy",
+        "result": "falsch"
+      },
+      {
+        "question": "Free/ Unoccupied",
+        "result": "richtig"
+      },
+      {
+        "question": "Wide",
+        "result": "richtig"
+      },
+      {
+        "question": "Narrow",
+        "result": "richtig"
+      },
+      {
+        "question": "Far",
+        "result": "richtig"
+      },
+      {
+        "question": "Nearby",
+        "result": "richtig"
+      },
+      {
+        "question": "A lot",
+        "result": "unsicher"
+      },
+      {
+        "question": "Few",
+        "result": "richtig"
+      },
+      {
+        "question": "Long",
+        "result": "falsch"
+      },
+      {
+        "question": "Short",
+        "result": "unsicher"
+      },
+      {
+        "question": "Stressful",
+        "result": "falsch"
+      },
+      {
+        "question": "Sleepy/ Boring",
+        "result": "richtig"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-16T10:40:51.756562",
+    "richtig": 6,
+    "falsch": 6,
+    "unsicher": 4,
+    "unbekannt": 0,
+    "details": [
+      {
+        "question": "Difficult",
+        "result": "richtig"
+      },
+      {
+        "question": "Easy",
+        "result": "unsicher"
+      },
+      {
+        "question": "Cute",
+        "result": "richtig"
+      },
+      {
+        "question": "Fun",
+        "result": "richtig"
+      },
+      {
+        "question": "Busy",
+        "result": "falsch"
+      },
+      {
+        "question": "Free/ Unoccupied",
+        "result": "richtig"
+      },
+      {
+        "question": "Wide",
+        "result": "unsicher"
+      },
+      {
+        "question": "Narrow",
+        "result": "falsch"
+      },
+      {
+        "question": "Far",
+        "result": "richtig"
+      },
+      {
+        "question": "Nearby",
+        "result": "unsicher"
+      },
+      {
+        "question": "A lot",
+        "result": "richtig"
+      },
+      {
+        "question": "Few",
+        "result": "unsicher"
+      },
+      {
+        "question": "Long",
+        "result": "falsch"
+      },
+      {
+        "question": "Short",
+        "result": "falsch"
+      },
+      {
+        "question": "Stressful",
+        "result": "falsch"
+      },
+      {
+        "question": "Sleepy/ Boring",
+        "result": "falsch"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-16T10:45:01.852717",
+    "richtig": 10,
+    "falsch": 3,
+    "unsicher": 3,
+    "unbekannt": 0,
+    "details": [
+      {
+        "question": "Difficult",
+        "result": "unsicher"
+      },
+      {
+        "question": "Easy",
+        "result": "falsch"
+      },
+      {
+        "question": "Cute",
+        "result": "richtig"
+      },
+      {
+        "question": "Fun",
+        "result": "richtig"
+      },
+      {
+        "question": "Busy",
+        "result": "richtig"
+      },
+      {
+        "question": "Free/ Unoccupied",
+        "result": "richtig"
+      },
+      {
+        "question": "Wide",
+        "result": "richtig"
+      },
+      {
+        "question": "Narrow",
+        "result": "richtig"
+      },
+      {
+        "question": "Far",
+        "result": "richtig"
+      },
+      {
+        "question": "Nearby",
+        "result": "unsicher"
+      },
+      {
+        "question": "A lot",
+        "result": "richtig"
+      },
+      {
+        "question": "Few",
+        "result": "falsch"
+      },
+      {
+        "question": "Long",
+        "result": "unsicher"
+      },
+      {
+        "question": "Short",
+        "result": "richtig"
+      },
+      {
+        "question": "Stressful",
+        "result": "falsch"
+      },
+      {
+        "question": "Sleepy/ Boring",
+        "result": "richtig"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-16T10:46:37.203967",
+    "richtig": 8,
+    "falsch": 2,
+    "unsicher": 1,
+    "unbekannt": 5,
+    "details": [
+      {
+        "question": "Difficult",
+        "result": "richtig"
+      },
+      {
+        "question": "Easy",
+        "result": "richtig"
+      },
+      {
+        "question": "Cute",
+        "result": "richtig"
+      },
+      {
+        "question": "Fun",
+        "result": "richtig"
+      },
+      {
+        "question": "Busy",
+        "result": "unsicher"
+      },
+      {
+        "question": "Free/ Unoccupied",
+        "result": "richtig"
+      },
+      {
+        "question": "Wide",
+        "result": "richtig"
+      },
+      {
+        "question": "Narrow",
+        "result": "falsch"
+      },
+      {
+        "question": "Far",
+        "result": "richtig"
+      },
+      {
+        "question": "Nearby",
+        "result": "richtig"
+      },
+      {
+        "question": "A lot",
+        "result": "falsch"
+      },
+      {
+        "question": "Few",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Long",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Short",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Stressful",
+        "result": "unbekannt"
+      },
+      {
+        "question": "Sleepy/ Boring",
+        "result": "unbekannt"
+      }
+    ]
+  }
+]
